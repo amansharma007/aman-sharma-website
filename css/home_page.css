@@ -3,6 +3,9 @@ body {
     padding : 0;
     background-color: lightgrey;
 }
+
+/*Navigation Bar Settings*/
+
 ul#navbar {
     font-family : sans-serif;
     /*text-align: center;*/
@@ -38,19 +41,50 @@ ul#navbar li a:hover{
     background-color: #009999;
 }
 
+ul#navbar a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
 /*Image Settings*/
-div.profile-image{
+
+div.self-info{
+    height : 250px;
+    border-radius: 8px;
     margin : 0 auto;
-    width : 760px;
+    background-color: white;
+}
+
+div.profile-image{
+    width : 180px;
+    height: 150px;
+    padding: 10px 20px;
+    display: inline-block;
 }
 
 img.profile-image{
     border-radius : 50%;
 }
 
+div.self-definition{
+    width: 820px;
+    display: inline;
+    float : right;
+}
+
+div.contact-me{
+    margin : 0 20px;
+}
+
+div.contact-me-background{
+    background-color : white;
+    margin: 0;
+}
 
 div#content-body{
-    margin: 39px 20px;
+    margin: 69px auto 0;
+    width : 1040px;
 }
 
 h2{
@@ -59,11 +93,6 @@ h2{
     font-weight: 100;
 }
 
-a:hover{
-    cursor: pointer;
-    text-decoration: none;
-    color: antiquewhite;
-}
 
 em{
     color: #006666;
