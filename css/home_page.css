@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    padding : 0;
+    background-color: lightgrey;
 }
 ul#navbar {
     font-family : sans-serif;
@@ -31,12 +33,24 @@ ul#navbar li:nth-child(5){
     float: right;
 }
 
+
 ul#navbar li a:hover{
     background-color: #009999;
 }
 
+/*Image Settings*/
+div.profile-image{
+    margin : 0 auto;
+    width : 760px;
+}
+
+img.profile-image{
+    border-radius : 50%;
+}
+
+
 div#content-body{
-    margin-top: 39px;
+    margin: 39px 20px;
 }
 
 h2{
