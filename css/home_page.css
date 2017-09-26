@@ -16,6 +16,7 @@ ul#navbar {
     padding : 0;
     margin : 0;
     list-style-type: none;
+    z-index: 1; /* This is to make the navigation bar to show on the topmost layer and nothing can overlap it. */
     overflow: hidden;
     /*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);*/
     /*border: solid 4px #009999;*/ 
@@ -29,7 +30,7 @@ ul#navbar li {
 ul#navbar li a{
     display: block;
     padding : 10px 10px;
-    color: #ffffff;
+    color: darkgray;
     text-align: center;
 }
 
@@ -56,7 +57,7 @@ ul#navbar a:active{
 
 div.self-info{
     height : auto;
-    border-radius: 8px;
+    border-radius: 5px;
     margin : 0 auto;
     background-color: white;
 }
@@ -78,8 +79,8 @@ div.profile-image{
     width : 180px;
     height: 200px;
     background-color: aqua;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     clip-path : polygon(0% 0%, 100% 0%, 71% 100%, 0% 100%);
     padding: 30px 20px;
     display: inline-block;
@@ -100,6 +101,7 @@ div.self-definition{
 div#content-body{
     margin: 69px auto 0;
     width : 1040px;
+    box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5)
 }
 
 /*Contact Me Settings*/
