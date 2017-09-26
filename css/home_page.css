@@ -129,16 +129,18 @@ div#content-body {
 /*Contact Me Settings*/
 
 div.contact-me p,
-div.contact-me form label {
+div.contact-me.message form label {
     color: #009999;
     font-family: Georgia, sans-serif;
 }
 
-div.contact-me p {
+div.contact-me p{
     font-size: 1.5em;
+    padding:  0 0 10px 0;
+    border-bottom: 1px solid #001919;
 }
 
-div.contact-me label {
+div.contact-me.message label {
     padding: 10px 10px 10px 0;
     display: inline-block;
     width: 100px;
@@ -146,31 +148,57 @@ div.contact-me label {
     font-weight: bolder;
 }
 
-div.contact-me input,
-div.contact-me textarea {
+
+div.contact-me.message input,
+div.contact-me.message textarea {
     background-color: #004c4c;
     border-style: none;
     padding: 10px;
     margin: 5px 0;
 }
 
-div.contact-me textarea {
+div.contact-me.message textarea {
     display: inline-block;
 }
 
-div.contact-me [type="submit"] {
+div.contact-me.message [type="submit"] {
     font-weight: bold;
 }
 
-div.contact-me [type="submit"]:hover {
+div.contact-me.message [type="submit"]:hover {
     background-color: aqua;
     cursor: pointer;
 }
 
-div.contact-me {
+div.contact-me.message {
     margin: 0 auto;
-    width: 1050px;
-    padding: 30px 0 0 0;
+    display: inline-block;
+    border-right: 1px solid #099;
+    width: 60%;
+    padding: 0 30px 0 30px;
+}
+
+div.contact-me.side-bar{
+    float: right;
+    width: 30%;
+    margin: 0;
+    height: 100%;
+    display: inline-block;
+}
+
+div.contact-me.side-bar ul{
+    color: #099;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    width: 90%;
+}
+
+div.contact-me.side-bar li{
+    padding : 0 0 15px 0;
+    font-family: Aerial,serif;
+    font-style: italic;
+    border-bottom: 1px solid #099;
 }
 
 div.contact-me-background {
