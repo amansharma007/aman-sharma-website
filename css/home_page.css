@@ -30,7 +30,9 @@ ul#navbar li {
 ul#navbar li a{
     display: block;
     padding : 10px 10px;
-    color: darkgray;
+    font-weight: bold;
+    font-family: Georgia,sans-serif;
+    color: #009999;
     text-align: center;
 }
 
@@ -107,7 +109,7 @@ div#content-body{
 /*Contact Me Settings*/
 
 div.contact-me p, div.contact-me form label{
-    color: darkslategrey;
+    color: #009999;
     font-family: Georgia, sans-serif;
 }
 
