@@ -1,171 +1,202 @@
 body {
     margin: 0;
-    padding : 0;
+    padding: 0;
     background-color: #099;
 }
+
 
 /*Navigation Bar Settings*/
 
 ul#navbar {
-    font-family : sans-serif;
+    font-family: sans-serif;
     /*text-align: center;*/
     background-color: black;
     width: 100%;
     position: fixed;
-    top : 0;
-    padding : 0;
-    margin : 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
     list-style-type: none;
-    z-index: 1; /* This is to make the navigation bar to show on the topmost layer and nothing can overlap it. */
+    z-index: 1;
+    /* This is to make the navigation bar to show on the topmost layer and nothing can overlap it. */
     overflow: hidden;
     /*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);*/
-    /*border: solid 4px #009999;*/ 
+    /*border: solid 4px #009999;*/
 }
 
 ul#navbar li {
-    float : left;
+    float: left;
 }
 
 
-ul#navbar li a{
+ul#navbar li a {
     display: block;
-    padding : 10px 10px;
+    padding: 10px 10px;
     font-weight: bold;
-    font-family: Georgia,sans-serif;
+    font-family: Georgia, sans-serif;
     color: #009999;
     text-align: center;
 }
 
-ul#navbar li:nth-child(5){
+ul#navbar li:nth-child(5) {
     float: right;
 }
 
 
-ul#navbar li a:hover{
+ul#navbar li a:hover {
     background-color: aqua;
     color: black;
 }
 
-ul#navbar a:hover{
+ul#navbar a:hover {
     cursor: pointer;
     text-decoration: none;
     color: antiquewhite;
 }
 
-ul#navbar a:active{
-    color:aqua;
+ul#navbar a:active {
+    color: aqua;
 }
+
 /*Image Settings And Self Information Settings */
 
-div.self-info{
-    height : auto;
+div.info {
+    height: auto;
     border-radius: 5px;
-    margin : 0 auto;
+    margin: 0 auto;
+    box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: white;
 }
 
-div.self-info ul{
-    padding: 0 20px 0 0;
-    margin : 7px 0 0 -13px;
+div.info ul {
+    padding: 0;
+    margin: 7px 70px 0 0;
     list-style-type: none;
 }
 
-div.self-info ul li{
-    font-family : Georgia,sans-serif;
-    line-height: 23px;
-    font-weight: bold;
-    color: #033;
+div.info h3{
+    margin : 10px auto;
 }
 
-div.profile-image{
-    width : 180px;
-    height: 200px;
+div.info ul li:nth-child(1) {
+    font-family: Georgia, sans-serif;
+    line-height: 23px;
+    font-weight: 100;
+    border-bottom: 1px solid #099;
+    font-size: 0.9em;
+    padding: 0 0 10px 0;
+    color: darkslategrey;
+}
+
+div.info ul li:nth-child(2){
+    font-family: Helvetica, sans-serif;
+    font-size: 0.9em;
+    color : #033;
+    font-weight: bold;
+    margin : 10px auto;
+}
+
+div.profile-image {
+    width : 22%;
+    height: 290px;
     background-color: aqua;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    clip-path : polygon(0% 0%, 100% 0%, 71% 100%, 0% 100%);
-    padding: 30px 20px;
+    clip-path: polygon(0% 0%, 100% 0%, 71% 100%, 0% 100%);
+    padding: 40px 20px;
     display: inline-block;
 }
 
-img.profile-image{
-    border-radius : 50%;
+img.profile-image {
+    border-radius: 30%;
+    border: 2px solid #b3e4e4;
+    box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
 }
 
-div.self-definition{
-    width: 800px;
-    padding : 0 20px 0 0;
+div.self-definition {
+    width: 70%;
+    padding: 0 20px 0 0;
     display: inline;
-    float : right;
+    float: right;
 }
 
 
-div#content-body{
+div#content-body {
     margin: 69px auto 0;
-    width : 1040px;
-    box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5)
+    width: 1040px;
 }
 
 /*Contact Me Settings*/
 
-div.contact-me p, div.contact-me form label{
+div.contact-me p,
+div.contact-me form label {
     color: #009999;
     font-family: Georgia, sans-serif;
 }
 
-div.contact-me p{ font-size : 1.5em; }
+div.contact-me p {
+    font-size: 1.5em;
+}
 
-div.contact-me label{
-    padding : 10px 10px 10px 0;
+div.contact-me label {
+    padding: 10px 10px 10px 0;
     display: inline-block;
-    width : 100px;
-    height : auto;
+    width: 100px;
+    height: auto;
     font-weight: bolder;
 }
 
-div.contact-me input, div.contact-me textarea{
+div.contact-me input,
+div.contact-me textarea {
     background-color: #004c4c;
     border-style: none;
-    padding : 10px;
-    margin : 5px 0;
+    padding: 10px;
+    margin: 5px 0;
 }
 
 div.contact-me textarea {
     display: inline-block;
 }
 
-div.contact-me [type="submit"]{ font-weight: bold;}
+div.contact-me [type="submit"] {
+    font-weight: bold;
+}
 
-div.contact-me [type="submit"]:hover{
-    background-color : aqua;
+div.contact-me [type="submit"]:hover {
+    background-color: aqua;
     cursor: pointer;
 }
 
-div.contact-me{
-    margin : 0 auto;
+div.contact-me {
+    margin: 0 auto;
     width: 1050px;
-    padding : 30px 0 0 0;
+    padding: 30px 0 0 0;
 }
 
-div.contact-me-background{
-    background-color : black;
-    margin: 20px 0 0 0 ;
+div.contact-me-background {
+    background-color: black;
+    margin: 20px 0 0 0;
     width: 100%;
-    padding : 3% 0;
+    padding: 3% 0;
 }
 
 
-h2{
+h2 {
     font-family: Georgia, sans-serif;
     font-size: 2.5em;
-    color : #009999;
+    color: #009999;
     font-weight: 100;
 }
-
-strong{
+h3{
+    font-family: Georgia, sans-serif;
+    font-size: 1.5em;
+    color: #033;
+    font-weight: bold;
+}
+strong {
     color: #009999;
 }
 
-em{
+em {
     color: #006666;
 }
