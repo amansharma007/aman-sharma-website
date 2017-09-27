@@ -99,7 +99,7 @@ div.info ul li:nth-child(2){
 div.profile-image {
     width : 22%;
     height: 290px;
-    background-color: aqua;
+    background-color: #bdeaea;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     clip-path: polygon(0% 0%, 100% 0%, 71% 100%, 0% 100%);
